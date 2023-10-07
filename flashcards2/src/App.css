@@ -6,8 +6,8 @@
 }
 
 .logo {
-  height: 6em;
-  padding: 1.5em;
+  height: 5em;
+  padding: 1em;
   will-change: filter;
   transition: filter 300ms;
 }
@@ -46,6 +46,11 @@
 
 .flashcard{
 
+
+  
+ 
+}
+.inner-card{
   padding: 5em;
   border-style:dashed;
   width: 30em;
@@ -55,10 +60,73 @@
   font-size: 1.1em;
   font-weight: 500;
   margin: 1em;
-  
- 
 }
 
 button{
   margin: 1em;
+}
+
+
+/* Flash effect for correct answer */
+.correct {
+  animation: flash-green 0.5s;
+}
+
+/* Flash effect for incorrect answer */
+.incorrect {
+  animation: flash-red 0.5s;
+}
+
+/* Flash effect for "Show Answer" button */
+.show-answer {
+  background-color: yellow;
+  transition: background-color 0.3s;
+}
+
+.show-answer:hover {
+  background-color: transparent;
+}
+
+/* Flash effect for "Next" and "Back" buttons */
+.next-button, .back-button {
+  background-color: white;
+  transition: background-color 0.3s;
+}
+
+.next-button:hover, .back-button:hover {
+  background-color: transparent;
+}
+
+/* Define the flash animations */
+@keyframes flash-green {
+  0% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: green;
+  }
+}
+
+@keyframes flash-red {
+  0% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: red;
+  }
+}
+
+@keyframes flash-white {
+  0% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: red;
+  }
+}
+
+.streak {
+  margin-top: 1rem;
+  text-align: center;
+  font-weight: bold;
 }

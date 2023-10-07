@@ -26,6 +26,7 @@ function App() {
  
   return (
     <>
+    
       <div>
         <img src={champsLogo} className= "logo" />
         <h1>Champions League Facts</h1>
@@ -35,7 +36,6 @@ function App() {
       </p>
 
       <h4>Number of Cards: {cardFacts.length}</h4>
-      
       
       
       <div className='cards'>
